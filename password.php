@@ -8,9 +8,9 @@ error_reporting(E_ALL);
 ?>
 <?php
 $lenght = $_GET['lenght'] ?? "null";
-$letter = $_GET['lettere'] ?? "null";
-$number = $_GET['numeri'] ?? "null";
-$special = $_GET['speciali'] ?? "null";
+$letter = $_POST['lettere'] ?? "null";
+$number = $_POST['numeri'] ?? "null";
+$special = $_POST['speciali'] ?? "null";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +33,7 @@ $special = $_GET['speciali'] ?? "null";
             <div class="offset-3 col-5 text-center text-bg-light">
                <p class="fs-2"><?php include "check.php" ?></p>
             </div>
-            <div class="offset-3 col-5 text-center text-bg-light">
+             <div class="offset-3 col-5 text-center text-bg-light">
                <b class="fs-2"><?php echo rndPsw($lenght) ?></b>
             </div>
         </div>
