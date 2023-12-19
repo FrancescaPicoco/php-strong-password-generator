@@ -12,7 +12,6 @@ $letter = $_GET['lettere'] ?? "null";
 $number = $_GET['numeri'] ?? "null";
 $special = $_GET['speciali'] ?? "null";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,10 +31,10 @@ $special = $_GET['speciali'] ?? "null";
             <?php include "form.php"?>
             </div>
             <div class="offset-3 col-5 text-center text-bg-light">
-               <b class="fs-2"><?php echo rndPsw($lenght) ?></b>
+               <p class="fs-2"><?php include "check.php" ?></p>
             </div>
             <div class="offset-3 col-5 text-center text-bg-light">
-               <p class="fs-2"><?php include "check.php" ?></p>
+               <b class="fs-2"><?php echo rndPsw($lenght) ?></b>
             </div>
         </div>
     </div>

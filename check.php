@@ -9,11 +9,11 @@
     <form action="password.php">
        <p>Please select:</p>
         <input type="radio" id="lett" name="lettere" value="letter">
-        <label for="html">Lettere</label><br>
+        <label for="html">Lettere</label>
         <input type="radio" id="numb" name="numeri" value="number">
-        <label for="css">Numeri</label><br>
+        <label for="css">Numeri</label>
         <input type="radio" id="spec" name="speciali" value="special">
-        <label for="javascript">Caratteri Speciali</label>
+        <label for="javascript" class="mb-3">Caratteri</label>
     </form>
 </body>
 </html>
