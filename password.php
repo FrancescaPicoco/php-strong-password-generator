@@ -7,10 +7,10 @@ error_reporting(E_ALL);
     include "function.php"
 ?>
 <?php
-$lenght = $_GET['lenght']?? "null";
-$letter = $_GET['lettere']?? "null";
-$number = $_GET['numeri']?? "null";
-$special = $_GET['speciali']?? "null";
+$lenght = $_GET['lenght'] ?? "null";
+$letter = $_GET['lettere'] ?? "null";
+$number = $_GET['numeri'] ?? "null";
+$special = $_GET['speciali'] ?? "null";
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ $special = $_GET['speciali']?? "null";
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body class="text-bg-dark">
     <div class="row">
         <div class="col-12 bg-dark p-5"></div>
         <div class="col-12 bg-dark p-3 text-light text-center"><b class="fs-1">STRONG PASSWORD GENERATOR</b></div>
