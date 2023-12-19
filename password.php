@@ -1,7 +1,7 @@
-<?php 
-$caratteri = "a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 1 2 3 4 5 6 7 8 9 0 ! $ & ?";
-$caratteresingolo = explode(" " , "$caratteri")
+<?php
+$lenght = $_GET["lenght"]?? "null";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +12,22 @@ $caratteresingolo = explode(" " , "$caratteri")
 </head>
 <body>
     <?php /*print_r($caratteresingolo)*/
-    foreach ($caratteresingolo as $caratteresingolo){
+    /*foreach ($caratteresingolo as $caratteresingolo){
         echo "<span> $caratteresingolo </span>";
+    }*/
+    function rndPsw($lenght){
+        $caratteri = "a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 1 2 3 4 5 6 7 8 9 0 ! $ & ?";
+        $caratteresingolo = explode(" " , "$caratteri");
+        $password = [];
+        for ($i=0; $i<$lenght; $i++){
+            $index = rand(0, $caratteresingolo);
+            $password[] = $index;
+        }
+        return implode($password);
     }
-    ?>
+    ?>   
+    <p><?php echo rndPsw() ?></p>
+    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
