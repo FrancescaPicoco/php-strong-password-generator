@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="password.php" method="POST">
+    <form action="password.php" method="GET">
        <p>Please select:</p>
         <input type="radio" id="lett" name="lettere" value="letter">
         <label for="lett">Lettere</label>

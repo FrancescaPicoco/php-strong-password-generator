@@ -8,9 +8,9 @@ error_reporting(E_ALL);
 ?>
 <?php
 $lenght = $_GET['lenght'] ?? "null";
-$letter = $_POST['lettere'] ?? "null";
-$number = $_POST['numeri'] ?? "null";
-$special = $_POST['speciali'] ?? "null";
+// $letter =  (isset($_GET["letter"]) ? $_GET["letter"] : false);     
+// $number = $_POST['numeri'] ?? "null";
+// $special = $_POST['speciali'] ?? "null";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,7 @@ $special = $_POST['speciali'] ?? "null";
                <p class="fs-2"><?php include "check.php" ?></p>
             </div>
              <div class="offset-3 col-5 text-center text-bg-light">
-               <b class="fs-2"><?php echo rndPsw($lenght) ?></b>
+               <b class="fs-2"><?php echo rndPsw($lenght,$arrayPassword) ?></b>
             </div>
         </div>
     </div>
