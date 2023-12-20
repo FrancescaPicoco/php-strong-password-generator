@@ -4,7 +4,7 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 ?>
 <?php 
-    include "function.php"
+    include "function.php";
 ?>
 <?php
 $lenght = $_GET['lenght'] ?? "null";
